@@ -88,6 +88,10 @@ signup_button.addEventListener("click", (e)=>{
 
                     account_error.classList.remove("account_error")
                 }else{
+                    var account_error = document.querySelector(".account_error_text")
+
+                    account_error.classList.add("account_error")
+
                     var email = document.querySelectorAll('input')[0].value
 
                     var password = document.querySelectorAll('input')[1].value.toLowerCase().replace(/\s/g, '')
