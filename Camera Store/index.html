@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Welcome to the Camera Store</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="logo.jpg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="site-logo" aria-label="homepage">Digital Hub</a>
+      <nav class="main-nav">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#products" class="nav__link">Products</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="account">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a class="nav__link nav__link--btn" href="login.html">Login</a>
+          </li>
+          <li class="nav__list-item">
+            <a
+              class="nav__link nav__link--btn nav__link--btn--highlight"
+              href="signup.html"
+              >Join</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home-intro">
+        <h1>Welcome to digital hub, home of all your digital camera and accessory needs.</h1>
+      </section>
+    </main>
+
+    <h2 id="about" style="padding: 10px 10px 0 10px; text-align: center;">About Digital Hub</h2>
+
+    <p style="padding: 15px; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h2 style="padding: 10px; text-align: center;">Categories</h2>
+
+    <div class="product_categories">
+      <a href="#">DSLR cameras</a>
+      <a href="#">Mirrorless cameras</a>
+      <a href="#">Bridge cameras</a>
+    </div>
+
+    <h2 style="padding: 10px; text-align: center;">Huge Promo</h2>    
+
+    <div class="promo_section">
+      <img src="promo.png">
+    </div>
+
+    <p style="padding: 15px; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h1 id="products" style="text-align: center;">Featured Products</h1>
+
+    <div class="grid_images">
+      <div class="image_container">
+        <img src="camera_1.jpg" alt="" />
+        <a href="camera_1.jpg" target="blank" class="download_options_container"></a>
+      </div>
+      <div class="image_container featured_horizontal">
+          <img src="camera_2.jpg" alt="" />
+          <a href="camera_2.jpg" target="blank" class="download_options_container"></a>
+      </div>
+      <div class="image_container featured_vertical">
+          <img src="camera_3.jpg" alt="" />
+          <a href="camera_3.jpg" target="blank" class="download_options_container"></a>
+      </div>
+      <div class="image_container featured_big">
+          <img src="camera_4.jpg" alt="" />
+          <a href="camera_4.jpg" target="blank" class="download_options_container"></a>
+      </div>
+      <div class="image_container featured_vertical">
+          <img src="camera_5.jpg" alt="" />
+          <a href="camera_5.jpg" target="blank" class="download_options_container"></a>
+      </div>
+      <div class="image_container featured_small">
+          <img src="camera_6.jpg" alt="" />
+          <a href="camera_6.jpg" target="blank" class="download_options_container"></a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foot">
+        <h2>Contact Us</h2>
+        <a href="tel:+1245894738">+1245894738</a>
+        <a href="mailto:digitalhub@gmail.com">digitalhub@gmail.com</a>
+      </div>
+      <div class="foot social_media">
+        <h2>Follow Us</h2>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <div class="foot">
+        <h2>Newsletter</h2>
+        <!-- <input style="padding: 7px 6px;" type="text" placeholder="Input your email" name=""> -->
+        <a href="#111" class="kkk">Subscribe</a>
+      </div>
+    </footer>
+    <p style="text-align: center;">Copyright Digital Hub &copy2023 All rights reserved</p>
+    <script src="index.js"></script>
+    <script type="text/javascript">
+      var loggedIN = JSON.parse(localStorage.getItem("loggedIN"));
+
+      if(loggedIN != null){
+        window.location = "loggedIn.html"
+      }
+    </script>
+  </body>
+</html>

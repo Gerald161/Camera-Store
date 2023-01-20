@@ -1,0 +1,107 @@
+body{
+    font-family: arial;
+    color: #333;
+}
+h1{
+    font-weight: normal;
+    margin: 20px auto;
+    text-align: center;
+}
+form{
+    width: 500px;
+    margin: 20px auto;
+}
+input{
+    display: block;
+    padding: 8px 16px;
+    font-size: 2em;
+    margin: 10px auto;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    outline: none !important;
+}
+
+/* validation styles */
+
+input.valid{
+    border-color: green;
+}
+
+input.invalid{
+    border-color: orange;
+}
+
+input + p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    color: orange;
+    opacity: 0;
+    height: 0;
+}
+
+input.invalid + p{
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#signup_button{
+    position: relative;
+    background: transparent;
+    right: 4px;
+    padding: 7px 17px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    cursor: pointer;
+    transition: background 0.5s;
+    z-index: 10000000;
+}
+
+.show_hide_pass{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}   
+
+/*first color here #009579*/
+
+.loading::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 5px solid #dddddd;
+    border-top-color: #fe8f04;
+    border-radius: 50%;
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading{
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.show_loader{
+    display: none;
+}
+
+.account_error, .password_error, .email_error{
+    display: none;
+}

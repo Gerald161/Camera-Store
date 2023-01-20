@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Welcome to the Camera Store</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="logo.jpg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="login.css">
+  </head>
+
+  <body>
+    <header class="login_header">
+      <a href="index.html" class="site-logo" aria-label="homepage">Digital Hub</a>
+      <nav class="account">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a
+              class="nav__link nav__link--btn nav__link--btn--highlight"
+              href="signup.html"
+              >Join</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="login_section">
+      <div class="first_section">
+        
+      </div>
+      <div class="second_section">
+        <h1>Welcome,Log in dear user</h1>
+        <form>
+            <p style="color: orange;" class="account_error account_error_text">Email does not exist </p>
+            <input type="text" name="email" placeholder="Email" required>
+            <p>Email must be a valid address, e.g. me@mydomain.com</p>
+
+            <div style="display: flex; flex-direction: column;">
+              <div>
+                <input type="password" name="password" placeholder="Password" id="password" required>
+                <p>Password must alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</p>
+                <p style="color: orange;" class="password_error password_error_text">Password is wrong</p>
+              </div>
+              <div class="show_hide_pass" style="cursor: pointer;">Show Password</div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+              <button type="submit" id="signup_button">Log in</button>
+            </div>
+
+            <div class="loading show_loader"></div>
+        </form>
+      </div>
+    </div>
+
+    
+
+    <footer>
+      <div class="foot">
+        <h2>Contact Us</h2>
+        <a href="tel:+1245894738">+1245894738</a>
+        <a href="mailto:digitalhub@gmail.com">digitalhub@gmail.com</a>
+      </div>
+      <div class="foot social_media">
+        <h2>Follow Us</h2>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <div class="foot">
+        <h2>Newsletter</h2>
+       <!--  <input style="padding: 7px 6px;" type="text" placeholder="Input your email" name=""> -->
+        <a href="#111" class="kkk">Subscribe</a>
+      </div>
+    </footer>
+    <p style="text-align: center;">Copyright Digital Hub &copy2023 All rights reserved</p>
+    <script src="index.js"></script>
+    <script type="text/javascript" src="validation.js"></script>
+  </body>
+</html>
